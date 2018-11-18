@@ -1,0 +1,174 @@
+/*==============================
+=            Global            =
+==============================*/
+
+* {
+	margin: 0;
+	padding: 0;
+	/* Para que se incluya el borde y el padding en el tamaño total */
+	box-sizing: border-box;
+}
+
+body {
+	width: 80%;
+	margin: auto;
+}
+
+/*=====  End of Global  ======*/
+
+/*================================
+=            CABECERA            =
+================================*/
+
+#cabecera, #cabecera * {
+	border: 1px black solid;
+}
+
+#cabecera {
+	/*Para que el div cabecera tenga el mismo tamaño que los div que contiene al usar el float*/
+	overflow: hidden;
+}
+
+#logo {
+	float: left;
+	width: 20%;
+}
+
+#titulo {
+	float: left;
+	width: 60%;
+}
+
+#redes {
+	float: right;
+	width: 20%;
+}
+/*PARA BORRAR*/
+#cabecera span {
+	height: 100px;
+}
+
+/*=====  End of CABECERA  ======*/
+
+/*============================
+=            MENU            =
+============================*/
+
+#menu, #menu * {
+	border: 1px yellow solid;
+}
+
+#menu ul {
+	/*Para eliminar el espacio entre li, escribimos que el tamaño fuente es 0 y, posteriormente, lo modificamos en li*/
+	font-size: 0;
+	text-align: center;
+}
+
+#menu ul li {
+	/*Modificación del tamaño fuente*/
+	font-size: 16px;
+	width: 25%;
+	display: inline-block;
+	text-align: center;
+	/*PARA BORRAR*/
+	height: 50px;
+}
+
+/*=====  End of MENU  ======*/
+
+/*=================================
+=            CONTENIDO            =
+=================================*/
+
+#contenido, #contenido * {
+	border: 1px red solid;
+}
+
+#contenido {
+	font-size: 0;
+	overflow: hidden;
+}
+
+#posts, #columna {
+	font-size: 16px;
+}
+
+#posts {
+	float: left;
+	width: 80%;
+	/*PARA BORRAR*/
+	height: 500px;
+}
+
+#columna {
+	float: right;
+	width: 20%;
+}
+
+#recientes, #login {
+	/*PARA BORRAR*/
+	width: 100%;
+	float: left;
+	height: 250px;
+}
+
+/*=====  End of CONTENIDO  ======*/
+
+/*================================
+=            NOSOTROS            =
+================================*/
+
+#nosotros {
+	border: 1px blue solid;
+	height: 200px;
+}
+
+/*=====  End of NOSOTROS  ======*/
+
+/*================================
+=            GALERÍA            =
+================================*/
+
+#galeria {
+	border: 1px green solid;
+	height: 300px;
+}
+
+/*=====  End of GALERÍA  ======*/
+
+/*================================
+=            CONTACTO            =
+================================*/
+
+#contacto, #contacto * {
+	border: 1px pink solid;
+	overflow: hidden;
+}
+
+#contactanos {
+	float: left;
+	width: 50%;
+}
+
+#mensaje {
+	float: right;
+	width: 50%;
+}
+/*PARA BORRAR*/
+#contactanos, #mensaje {
+	height: 200px;
+}
+
+/*=====  End of CONTACTO  ======*/
+
+/*==============================
+=            FOOTER            =
+==============================*/
+
+#footer {
+	border: 1px brown solid;
+	/*PARA BORRAR*/
+	height: 50px;
+}
+
+/*=====  End of FOOTER  ======*/
