@@ -10,6 +10,7 @@
 }
 
 body {
+	background: #d3e2ed;
 	width: 80%;
 	margin: auto;
 }
@@ -54,24 +55,36 @@ body {
 =            MENU            =
 ============================*/
 
-#menu, #menu * {
-	border: 1px yellow solid;
-}
-
 #menu ul {
 	/*Para eliminar el espacio entre li, escribimos que el tamaño fuente es 0 y, posteriormente, lo modificamos en li*/
 	font-size: 0;
-	text-align: center;
 }
 
 #menu ul li {
 	/*Modificación del tamaño fuente*/
-	font-size: 16px;
-	width: 25%;
+	font-size: 20px;
 	display: inline-block;
+	width: 25%;
 	text-align: center;
-	/*PARA BORRAR*/
-	height: 50px;
+}
+
+#menu ul li a {
+	/*Para eliminar el subrrayado del enlace*/
+	text-decoration: none;
+	/*Para que a ocupe el espacio de li como un bloque*/
+	display: block;
+	margin: 0 1px;
+	background: rgba(68, 119, 153, 1);
+	color: white;
+	line-height: 50px;
+}
+/*Para que a cambie de color al pasar el ratón*/
+#menu ul li a:hover{
+	background: rgba(68, 119, 153, 0.5);
+}
+/*Para que a cambie de color al clickear*/
+#menu ul li a:active{
+	background: rgb(32, 78, 109)
 }
 
 /*=====  End of MENU  ======*/
