@@ -168,11 +168,14 @@ body>div {
 	height: 224px;
 }
 
-#recientes li {
-	/*PARA BORRAR*/
-	height: 56px;
+#recientes ul {
 	/*Elimina los puntos de una lista desordenada*/
 	list-style: none;
+}
+
+#recientes li {
+	/*PARA BORRAR*/
+	height: 56px;	
 }
 
 /*=====  End of CONTENIDO  ======*/
