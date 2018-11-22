@@ -15,15 +15,19 @@ body {
 	margin: auto;
 }
 
+body>div {
+	margin: 5px 0;
+}
+
 /*=====  End of Global  ======*/
 
 /*================================
 =            CABECERA            =
 ================================*/
-
-#cabecera, #cabecera * {
+/*
+#cabecera {
 	border: 1px black solid;
-}
+}*/
 
 #cabecera {
 	/*Para que el div cabecera tenga el mismo tamaño que los div que contiene al usar el float*/
@@ -35,14 +39,43 @@ body {
 	width: 20%;
 }
 
+#logo img {
+	display: block;
+	height: 100px;
+	margin: auto;
+}
+
 #titulo {
 	float: left;
 	width: 60%;
+	text-align: center;
+	background-color: rgb(87, 154, 199);
+	color: white;
+}
+
+#titulo h1 {
+	padding: 30px 0;
 }
 
 #redes {
 	float: right;
 	width: 20%;
+}
+
+#redes span {
+	float: left;
+	width: 33.33%;
+}
+
+#redes span a {
+	float: left;
+	height: 100px;
+	margin: 0 20%;
+}
+
+#redes img {
+	margin-top: 25px;
+	width: 50px;
 }
 /*PARA BORRAR*/
 #cabecera span {
@@ -69,7 +102,7 @@ body {
 }
 
 #menu ul li a {
-	/*Para eliminar el subrrayado del enlace*/
+	/*Para eliminar el subrayado del enlace*/
 	text-decoration: none;
 	/*Para que a ocupe el espacio de li como un bloque*/
 	display: block;
@@ -94,7 +127,7 @@ body {
 =================================*/
 
 #contenido, #contenido * {
-	border: 1px red solid;
+	border: 1px blue solid;
 }
 
 #contenido {
@@ -109,8 +142,16 @@ body {
 #posts {
 	float: left;
 	width: 80%;
-	/*PARA BORRAR*/
+}
+
+#posts div {
 	height: 500px;
+}
+
+#posts div div {
+	float: left;
+	width: 500px;
+	height: 334px;
 }
 
 #columna {
@@ -118,11 +159,19 @@ body {
 	width: 20%;
 }
 
-#recientes, #login {
+#login, #recientes {
 	/*PARA BORRAR*/
-	width: 100%;
-	float: left;
+	display: block;
 	height: 250px;
+}
+
+#login div {
+	height: 224px;
+}
+
+#recientes li {
+	/*PARA BORRAR*/
+	height: 56px;
 }
 
 /*=====  End of CONTENIDO  ======*/
