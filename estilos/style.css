@@ -24,10 +24,6 @@ body>div {
 /*================================
 =            CABECERA            =
 ================================*/
-/*
-#cabecera {
-	border: 1px black solid;
-}*/
 
 #cabecera {
 	/*Para que el div cabecera tenga el mismo tamaño que los div que contiene al usar el float*/
@@ -145,6 +141,8 @@ body>div {
 }
 
 #posts div {
+	overflow: hidden;
+	padding: 10px;
 	height: 500px;
 }
 
@@ -152,6 +150,7 @@ body>div {
 	float: left;
 	width: 500px;
 	height: 334px;
+	margin: 0 10px 10px 0;
 }
 
 #columna {
@@ -172,6 +171,8 @@ body>div {
 #recientes li {
 	/*PARA BORRAR*/
 	height: 56px;
+	/*Elimina los puntos de una lista desordenada*/
+	list-style: none;
 }
 
 /*=====  End of CONTENIDO  ======*/
@@ -193,7 +194,7 @@ body>div {
 
 #galeria {
 	border: 1px green solid;
-	height: 300px;
+	height: 500px;
 }
 
 /*=====  End of GALERÍA  ======*/
@@ -228,7 +229,9 @@ body>div {
 ==============================*/
 
 #footer {
-	border: 1px brown solid;
+	background: rgba(68, 119, 153);
+	color: white;
+	text-align: center;
 	/*PARA BORRAR*/
 	height: 50px;
 }
