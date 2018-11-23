@@ -87,6 +87,7 @@ body>div {
 #menu ul {
 	/*Para eliminar el espacio entre li, escribimos que el tamaño fuente es 0 y, posteriormente, lo modificamos en li*/
 	font-size: 0;
+	box-shadow: 1px 1px 5px #000;
 }
 
 #menu ul li {
@@ -95,6 +96,7 @@ body>div {
 	display: inline-block;
 	width: 25%;
 	text-align: center;
+	background: rgba(68, 119, 153, 1);
 }
 
 #menu ul li a {
@@ -102,14 +104,12 @@ body>div {
 	text-decoration: none;
 	/*Para que a ocupe el espacio de li como un bloque*/
 	display: block;
-	margin: 0 1px;
-	background: rgba(68, 119, 153, 1);
 	color: white;
 	line-height: 50px;
 }
 /*Para que a cambie de color al pasar el ratón*/
 #menu ul li a:hover{
-	background: rgba(68, 119, 153, 0.5);
+	background: rgb(57, 99, 127);
 }
 /*Para que a cambie de color al clickear*/
 #menu ul li a:active{
