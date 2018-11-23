@@ -11,12 +11,18 @@
 
 body {
 	background: #d3e2ed;
-	width: 80%;
-	margin: auto;
 }
 
 body>div {
-	margin: 5px 0;
+	width: 80%;
+	margin: 10px auto;
+}
+
+.estiloSeccion {
+	background: rgba(68, 119, 153, 1);
+	width: 100%;
+	/*Para darle sombra a la sección*/
+	box-shadow: 1px 1px 5px #000;
 }
 
 /*=====  End of Global  ======*/
@@ -42,6 +48,7 @@ body>div {
 }
 
 #titulo {
+	box-shadow: 1px 1px 5px #000;
 	float: left;
 	width: 60%;
 	text-align: center;
@@ -84,10 +91,14 @@ body>div {
 =            MENU            =
 ============================*/
 
+#menu {
+}
+
 #menu ul {
 	/*Para eliminar el espacio entre li, escribimos que el tamaño fuente es 0 y, posteriormente, lo modificamos en li*/
 	font-size: 0;
-	box-shadow: 1px 1px 5px #000;
+	width: 80%;
+	margin: auto;
 }
 
 #menu ul li {
@@ -96,7 +107,6 @@ body>div {
 	display: inline-block;
 	width: 25%;
 	text-align: center;
-	background: rgba(68, 119, 153, 1);
 }
 
 #menu ul li a {
@@ -106,14 +116,19 @@ body>div {
 	display: block;
 	color: white;
 	line-height: 50px;
+	/*Estas tres líneas hacen que las transiciones pasen según un tiempo determinado*/
+	-webkit-transition: all 500ms ease;
+	-o-transition: all 500ms ease;
+	transition: all 500ms ease;
 }
 /*Para que a cambie de color al pasar el ratón*/
 #menu ul li a:hover{
-	background: rgb(57, 99, 127);
+	background: rgb(50, 89, 114);
+	border-radius: 50px;
 }
 /*Para que a cambie de color al clickear*/
 #menu ul li a:active{
-	background: rgb(32, 78, 109)
+	background: rgb(25, 63, 89);
 }
 
 /*=====  End of MENU  ======*/
