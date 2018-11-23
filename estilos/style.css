@@ -137,40 +137,46 @@ body>div {
 =            CONTENIDO            =
 =================================*/
 
-#contenido, #contenido * {
-	border: 1px blue solid;
-}
-
 #contenido {
 	font-size: 0;
-	overflow: hidden;
+	background: rgba(68, 119, 153, 1);
+	padding: 10px;
+	box-shadow: 1px 1px 5px #000;
 }
 
 #posts, #columna {
 	font-size: 16px;
+	display: inline-block;
 }
 
 #posts {
-	float: left;
 	width: 80%;
 }
 
 #posts div {
 	overflow: hidden;
-	padding: 10px;
+	
 	height: 500px;
 }
 
-#posts div div {
+#posts div img {
 	float: left;
 	width: 500px;
 	height: 334px;
 	margin: 0 10px 10px 0;
+	box-shadow: 1px 1px 5px #000;
+}
+
+#posts div, #columna span {
+	padding: 10px;
+	background: #d3e2ed;
+	margin: 0 10px 10px 0;
+	box-shadow: 1px 1px 5px #000;
 }
 
 #columna {
-	float: right;
 	width: 20%;
+	float: right;
 }
 
 #login, #recientes {
