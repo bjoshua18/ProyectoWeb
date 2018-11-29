@@ -9,26 +9,36 @@
 	box-sizing: border-box;
 }
 
+html {
+	font-size: 10px;
+}
+
 body {
-	background: #d3e2ed;
+	font-size: 1.6rem;
+	background-color: #d3e2ed;
 }
 
 body>div {
 	width: 80%;
-	margin: 10px auto;
+	margin: 1rem auto;
 }
 
 .menuFooter {
-	background: rgba(68, 119, 153, 1);
+	background-color: rgba(68, 119, 153, 1);
 	width: 100%;
 	/*Para darle sombra a la sección*/
-	box-shadow: 1px 1px 5px #000;
+	box-shadow: 0.1rem 0.1rem 0.5rem #000;
 }
 
-.seccion {
-	background: rgba(68, 119, 153, 1);
-	padding: 10px;
-	box-shadow: 1px 1px 5px #000;
+.seccion, #contenido {
+	background-color: rgba(68, 119, 153, 1);
+	padding: 1rem;
+	box-shadow: 0.1rem 0.1rem 0.5rem #000;
+}
+
+.seccion>div {
+	background-color: #d3e2ed;
+	box-shadow: 0.1rem 0.1rem 0.5rem #000;
 }
 
 /*=====  End of Global  ======*/
@@ -49,18 +59,18 @@ body>div {
 
 #logo img {
 	display: block;
-	height: 100px;
+	height: 10rem;
 	margin: auto;
 }
 
 #titulo {
-	box-shadow: 1px 1px 5px #000;
+	box-shadow: 0.1rem 0.1rem 0.5rem #000;
 	float: left;
 	width: 60%;
 	text-align: center;
-	font-size: 40px;
-	padding: 25px 0;
-	background-color: rgb(87, 154, 199);
+	font-size: 4rem;
+	padding: 2.5rem 0;
+	background-color: rgba(87, 154, 199, 1);
 	color: white;
 }
 
@@ -76,17 +86,12 @@ body>div {
 
 #redes span a {
 	float: left;
-	height: 100px;
 	margin: 0 20%;
 }
 
 #redes img {
-	margin-top: 25px;
-	width: 50px;
-}
-/*PARA BORRAR*/
-#cabecera span {
-	height: 100px;
+	margin-top: 2.5rem;
+	width: 5rem;
 }
 
 /*=====  End of CABECERA  ======*/
@@ -94,9 +99,6 @@ body>div {
 /*============================
 =            MENU            =
 ============================*/
-
-#menu {
-}
 
 #menu ul {
 	/*Para eliminar el espacio entre li, escribimos que el tamaño fuente es 0 y, posteriormente, lo modificamos en li*/
@@ -107,7 +109,7 @@ body>div {
 
 #menu ul li {
 	/*Modificación del tamaño fuente*/
-	font-size: 20px;
+	font-size: 2rem;
 	display: inline-block;
 	width: 25%;
 	text-align: center;
@@ -119,7 +121,7 @@ body>div {
 	/*Para que a ocupe el espacio de li como un bloque*/
 	display: block;
 	color: white;
-	line-height: 50px;
+	line-height: 5rem;
 	/*Estas tres líneas hacen que las transiciones pasen según un tiempo determinado*/
 	-webkit-transition: all 500ms ease;
 	-o-transition: all 500ms ease;
@@ -127,12 +129,12 @@ body>div {
 }
 /*Para que a cambie de color al pasar el ratón*/
 #menu ul li a:hover{
-	background: rgb(50, 89, 114);
-	border-radius: 50px;
+	background-color: rgb(50, 89, 114);
+	border-radius: 5rem;
 }
 /*Para que a cambie de color al clickear*/
 #menu ul li a:active{
-	background: rgb(25, 63, 89);
+	background-color: rgb(25, 63, 89);
 }
 
 /*=====  End of MENU  ======*/
@@ -149,30 +151,31 @@ body>div {
 	width: 80%;
 }
 
-#posts div {
+#posts>div {
 	height: 500px;
+	margin: 0 1rem 1rem 0;
 }
 
 #posts div img {
-	width: 500px;
-	height: 334px;
-	margin: 0 10px 10px 0;
-	box-shadow: 1px 1px 5px #000;
+	width: 50rem;
+	height: 33.4rem;
+	box-shadow: 0.1rem 0.1rem 0.5rem #000;
 }
 
 .impar {
 	float: left;
+	margin: 0 2rem 2rem 0;
 }
 
 .par {
 	float: right;
+	margin: 0 0 2rem 2rem;
 }
 
 #posts>div, #columna>div {
-	padding: 10px;
-	background: #d3e2ed;
-	margin: 0 10px 10px 0;
-	box-shadow: 1px 1px 5px #000;
+	padding: 1rem;
+	background-color: #d3e2ed;
+	box-shadow: 0.1rem 0.1rem 0.5rem #000;
 }
 
 #columna {
@@ -180,13 +183,12 @@ body>div {
 	float: right;
 }
 
-#login, #recientes {
-	/*PARA BORRAR*/
-	display: block;
-	height: 250px;
+#columna>div {
+	margin-bottom: 1rem;
 }
 
 #login div {
+	/*PARA BORRAR*/
 	height: 224px;
 }
 
@@ -197,7 +199,7 @@ body>div {
 
 #recientes li {
 	/*PARA BORRAR*/
-	height: 56px;	
+	height: 5.6rem;	
 }
 
 /*=====  End of CONTENIDO  ======*/
@@ -206,10 +208,9 @@ body>div {
 =            NOSOTROS            =
 ================================*/
 
-#nosotros {
+#nosotros>div {
+	/*PARA BORRAR*/
 	height: 200px;
-	background: #d3e2ed;
-	padding: 10px;
 }
 
 /*=====  End of NOSOTROS  ======*/
@@ -218,7 +219,8 @@ body>div {
 =            GALERÍA            =
 ================================*/
 
-#galeria {
+#galeria>div {
+	/*PARA BORRAR*/
 	height: 500px;
 }
 
@@ -229,7 +231,6 @@ body>div {
 ================================*/
 
 #contacto {
-	font-size: 0;
 	overflow: hidden;
 
 }
@@ -243,11 +244,8 @@ body>div {
 }
 
 #contactanos, #mensaje {
-	font-size: 20px;
 	width: 49.5%;
-	padding: 10px;
-	background: #d3e2ed;
-	box-shadow: 1px 1px 5px #000;
+	padding: 1rem;
 	/*PARA BORRAR*/
 	height: 200px;
 }
@@ -259,7 +257,6 @@ body>div {
 ==============================*/
 
 #footer {
-	background: rgba(68, 119, 153);
 	color: white;
 	text-align: center;
 	/*PARA BORRAR*/
