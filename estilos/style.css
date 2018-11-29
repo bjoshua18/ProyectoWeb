@@ -18,10 +18,16 @@ body>div {
 	margin: 10px auto;
 }
 
-.estiloSeccion {
+.menuFooter {
 	background: rgba(68, 119, 153, 1);
 	width: 100%;
 	/*Para darle sombra a la sección*/
+	box-shadow: 1px 1px 5px #000;
+}
+
+.seccion {
+	background: rgba(68, 119, 153, 1);
+	padding: 10px;
 	box-shadow: 1px 1px 5px #000;
 }
 
@@ -52,12 +58,10 @@ body>div {
 	float: left;
 	width: 60%;
 	text-align: center;
+	font-size: 40px;
+	padding: 25px 0;
 	background-color: rgb(87, 154, 199);
 	color: white;
-}
-
-#titulo h1 {
-	padding: 30px 0;
 }
 
 #redes {
@@ -137,15 +141,7 @@ body>div {
 =            CONTENIDO            =
 =================================*/
 
-#contenido {
-	font-size: 0;
-	background: rgba(68, 119, 153, 1);
-	padding: 10px;
-	box-shadow: 1px 1px 5px #000;
-}
-
 #posts, #columna {
-	font-size: 16px;
 	display: inline-block;
 }
 
@@ -154,20 +150,25 @@ body>div {
 }
 
 #posts div {
-	overflow: hidden;
-	
 	height: 500px;
 }
 
 #posts div img {
-	float: left;
 	width: 500px;
 	height: 334px;
 	margin: 0 10px 10px 0;
 	box-shadow: 1px 1px 5px #000;
 }
 
-#posts div, #columna span {
+.impar {
+	float: left;
+}
+
+.par {
+	float: right;
+}
+
+#posts>div, #columna>div {
 	padding: 10px;
 	background: #d3e2ed;
 	margin: 0 10px 10px 0;
@@ -206,8 +207,9 @@ body>div {
 ================================*/
 
 #nosotros {
-	border: 1px blue solid;
 	height: 200px;
+	background: #d3e2ed;
+	padding: 10px;
 }
 
 /*=====  End of NOSOTROS  ======*/
@@ -217,7 +219,6 @@ body>div {
 ================================*/
 
 #galeria {
-	border: 1px green solid;
 	height: 500px;
 }
 
@@ -227,22 +228,27 @@ body>div {
 =            CONTACTO            =
 ================================*/
 
-#contacto, #contacto * {
-	border: 1px pink solid;
+#contacto {
+	font-size: 0;
 	overflow: hidden;
+
 }
 
 #contactanos {
 	float: left;
-	width: 50%;
 }
 
 #mensaje {
 	float: right;
-	width: 50%;
 }
-/*PARA BORRAR*/
+
 #contactanos, #mensaje {
+	font-size: 20px;
+	width: 49.5%;
+	padding: 10px;
+	background: #d3e2ed;
+	box-shadow: 1px 1px 5px #000;
+	/*PARA BORRAR*/
 	height: 200px;
 }
 
