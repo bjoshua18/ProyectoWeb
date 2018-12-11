@@ -1,0 +1,88 @@
+/*==============================
+=            Global            =
+==============================*/
+
+form {
+	width: 21%;
+	padding: 1rem;
+	color: white;
+	margin:5% auto;
+	background-color: #8bb2cf;
+}
+
+h1 {
+	background-color: rgba(87, 154, 199, 0.8);
+	padding: 1rem;
+}
+
+h1, form>div {
+	margin-bottom: 1rem;
+	padding: 1rem;
+}
+
+.block * {
+	margin-bottom: 0.5rem;
+}
+
+.apartado {
+	background-color: rgba(68, 119, 153, 0.8);
+	text-align: center;
+	padding: 0.5rem 0;
+}
+
+label {
+	display: inline-block;
+	width: 45%;
+}
+
+/*================================
+=            ENTRADAS            =
+================================*/
+
+input[type = "text"], input[type = "password"] {
+	border: .2rem solid #447799;
+	outline: none;
+	transition: 250ms;
+	background-repeat: no-repeat;
+}
+
+input[type = "text"]:focus, input[type = "password"]:focus {
+	border-color: #2ecc71;
+}
+
+/*=====  End of ENTRADAS  ======*/
+
+/*===============================
+=            BOTONES            =
+===============================*/
+
+input[type = "submit"], input[type = "reset"] {
+	outline: none;
+	color: white;
+	background-color: rgba(68, 119, 153, 0.8);
+	display: block;
+	border: 0.2rem solid white;
+	transition: 250ms;
+}
+
+input[type = "submit"] {
+	margin: 2rem auto;
+	text-align: center;
+	padding: 1.4rem 4rem;
+	border-radius:2.4rem;
+}
+
+input[type = "reset"] {
+	text-decoration: none;
+	margin: auto;
+	padding: 0.5rem;
+}
+
+input[type = "submit"]:hover, input[type = "reset"]:hover {
+	background: #2ecc71;
+	color: white;
+}
+
+/*=====  End of BOTONES  ======*/
+
+/*=====  End of Global  ======*/
