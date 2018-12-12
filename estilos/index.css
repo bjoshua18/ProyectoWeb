@@ -29,20 +29,21 @@
 #cabecera {
 	/*Para que el div cabecera tenga el mismo tamaño que los div que contiene al usar el float*/
 	overflow: hidden;
+	text-align: center;
 }
 
-#logo {
+.logo {
 	float: left;
 	width: 20%;
 }
 
-#logo img {
+.logo img {
 	display: block;
 	height: 10rem;
 	margin: auto;
 }
 
-#titulo {
+.titulo {
 	box-shadow: 0.1rem 0.1rem 0.5rem #000;
 	float: left;
 	width: 60%;
@@ -53,25 +54,71 @@
 	color: white;
 }
 
-#redes {
-	float: right;
-	width: 20%;
+/*Fuente del estilo del apartado redes sociales: https://youtu.be/fDm0WJ_66d0*/
+
+/*Posicionamos cada botón y le damos estilo*/
+.btn {
+	display: inline-block;
+	width: 7rem;
+	height: 7rem;
+	background-color: rgba(87, 154, 199, 1);
+	margin: 1rem;
+	border-radius: 30%;
+	box-shadow: 0 0.5rem 1.5rem -0.5rem #00000070;
+	color: white;
+	overflow: hidden;
+	position: relative;
 }
 
-#redes span {
-	float: left;
-	width: 33.33%;
+/*Posicionamos los iconos*/
+.btn i {
+	line-height: 7rem;
+	font-size: 2.6rem;
+	transition: 200ms linear;
 }
 
-#redes span a {
-	float: left;
-	margin: 0 20%;
+/*El icono aumenta de tamaño y cambia de color al pasar el cursor*/
+.btn:hover i {
+	transform: scale(1.3);
+	color: #f1f1f1;
 }
 
-#redes img {
-	margin-top: 2.5rem;
-	width: 5rem;
+/*contenedor que está oculto, creado para hacer el efecto*/
+.btn::before {
+	content: "";
+	position: absolute;
+	width: 120%;
+	height: 120%;
+	background-color: rgba(68, 119, 153, 1);
+	transform: rotate(45deg);
+	left: -110%;
+	top: 90%;
 }
+
+/*El contenedor aparece al pasar el cursor*/
+.btn:hover::before {
+	animation: aaa 0.7s 1;
+	top: -10%;
+	left: -10%;
+}
+
+@keyframes aaa {
+	0% {
+		top: 90%;
+		left: -110%;
+	}50%{
+		top: -30%;
+		left: 10%;
+	}100%{
+		top: -10%;
+		left: -10%;
+	}
+}
+
+
+
+
+
 
 /*=====  End of CABECERA  ======*/
 
