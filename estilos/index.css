@@ -205,19 +205,6 @@
 ================================*/
 
 #contacto {
-	overflow: hidden;
-}
-
-#contactanos {
-	float: left;
-}
-
-#mensaje {
-	float: right;
-}
-
-#contactanos, #mensaje {
-	width: 49.5%;
 	padding: 1rem;
 	/*PARA BORRAR*/
 	height: 200px;

@@ -1,12 +1,15 @@
+/* Fuente: https://youtu.be/HV7DtH3J2PU */
+
 /*==============================
 =            Global            =
 ==============================*/
 
 form {
-	width: 21%;
+	position: absolute;
+	top: 15%;
+	left: 40%;
 	padding: 1rem;
 	color: white;
-	margin:5% auto;
 	background-color: #8bb2cf;
 }
 
