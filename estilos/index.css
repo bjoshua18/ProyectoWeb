@@ -54,6 +54,12 @@
 	color: white;
 }
 
+.redes {
+	float: right;
+	width: 20%;
+	height: 10rem;
+}
+
 /*Fuente del estilo del apartado redes sociales: https://youtu.be/fDm0WJ_66d0*/
 
 /*Posicionamos cada botón y le damos estilo*/
@@ -61,8 +67,8 @@
 	display: inline-block;
 	width: 7rem;
 	height: 7rem;
+	margin: 1.5rem auto;
 	background-color: rgba(87, 154, 199, 1);
-	margin: 1rem;
 	border-radius: 30%;
 	box-shadow: 0 0.5rem 1.5rem -0.5rem #00000070;
 	color: white;
@@ -89,7 +95,7 @@
 	position: absolute;
 	width: 120%;
 	height: 120%;
-	background-color: rgba(68, 119, 153, 1);
+	background-color: rgb(25, 63, 89);
 	transform: rotate(45deg);
 	left: -110%;
 	top: 90%;
@@ -115,11 +121,6 @@
 	}
 }
 
-
-
-
-
-
 /*=====  End of CABECERA  ======*/
 
 /*============================
@@ -131,6 +132,7 @@
 	font-size: 0;
 	width: 80%;
 	margin: auto;
+	font-family: monserrat, sans-serif;
 }
 
 #menu ul li {
@@ -139,28 +141,39 @@
 	display: inline-block;
 	width: 25%;
 	text-align: center;
+	position: relative;
+	overflow: hidden;
+	z-index: 1;
 }
 
-#menu ul li a {
+.boton {
 	/*Para eliminar el subrayado del enlace*/
 	text-decoration: none;
 	/*Para que a ocupe el espacio de li como un bloque*/
 	display: block;
+	background: none;
 	color: white;
 	line-height: 5rem;
-	/*Estas tres líneas hacen que las transiciones pasen según un tiempo determinado*/
-	-webkit-transition: all 500ms ease;
-	-o-transition: all 500ms ease;
-	transition: all 500ms ease;
+	transition: 500ms;
 }
-/*Para que a cambie de color al pasar el ratón*/
-#menu ul li a:hover{
-	background-color: rgb(50, 89, 114);
-	border-radius: 5rem;
-}
-/*Para que a cambie de color al clickear*/
-#menu ul li a:active{
+
+/*Elemento que está oculto para hacer el efecto*/
+.boton::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	width: 100%;
+	height: 0%;
 	background-color: rgb(25, 63, 89);
+	z-index: -1;
+	transition: 500ms;
+	top: 0;
+	border-radius: 0 0 50% 50%;
+}
+
+/*El elemento aparece al pasar el cursor*/
+.boton:hover::before {
+	height: 180%
 }
 
 /*=====  End of MENU  ======*/
@@ -251,7 +264,7 @@
 =            CONTACTO            =
 ================================*/
 
-#contacto {
+#contacto>div {
 	padding: 1rem;
 	/*PARA BORRAR*/
 	height: 200px;

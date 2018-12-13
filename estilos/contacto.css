@@ -30,7 +30,7 @@
 
 /*Estilo que se crea al pasar el cursor*/
 .opcion:hover i {
-	background-color: rgba(68, 119, 153, 1);
+	background-color: rgb(25, 63, 89);
 }
 
 .text {
