@@ -2,6 +2,11 @@
 =            Global            =
 ==============================*/
 
+html {
+	/*Para que al pulsar el botón de subir, se deslice hacia arriba*/
+	scroll-behavior: smooth;
+}
+
 .menuFooter {
 	background-color: rgba(68, 119, 153, 1);
 	width: 100%;
@@ -306,10 +311,7 @@
 =            NOSOTROS            =
 ================================*/
 
-#nosotros>div {
-	/*PARA BORRAR*/
-	height: 200px;
-}
+
 
 /*=====  End of NOSOTROS  ======*/
 
@@ -317,9 +319,53 @@
 =            GALERÍA            =
 ================================*/
 
+#galeria {
+	text-align: center;
+	padding: 1rem;
+}
+
 #galeria>div {
-	/*PARA BORRAR*/
-	height: 500px;
+	padding: 2rem;
+}
+
+#galeria h2, .slider {
+	margin: 2rem auto;
+}
+
+/*Fuente del apartado Slider: https://youtu.be/fw3fOHnzCjI*/
+
+.slider {
+	position: relative;
+	bottom: 1rem;
+	width: 80%;
+	height: 78rem;
+	background: url(../img/imagenes/imagen1.jpg);
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	animation: slide 30s infinite;
+}
+
+@keyframes slide {
+	25%{
+		background: url(../img/imagenes/imagen2.jpg);
+		background-size: 100% auto;
+		background-repeat: no-repeat;
+	}
+	50%{
+		background: url(../img/imagenes/imagen3.jpg);
+		background-size: 100% auto;
+		background-repeat: no-repeat;
+	}
+	75%{
+		background: url(../img/imagenes/imagen4.jpg);
+		background-size: 100% auto;
+		background-repeat: no-repeat;
+	}
+	100%{
+		background: url(../img/imagenes/imagen5.jpg);
+		background-size: 100% auto;
+		background-repeat: no-repeat;
+	}
 }
 
 /*=====  End of GALERÍA  ======*/
@@ -327,6 +373,64 @@
 /*================================
 =            CONTACTO            =
 ================================*/
+/*Fuente: https://youtu.be/RQ3a10EOnXU*/
+
+#contact-info {
+	width: 6rem;
+	font-family: monserrat, sans-serif;
+	/*Posicionamos el div contenedor*/
+	position: fixed;
+	top: 60%;
+	z-index: 99999;
+	left: 0;
+}
+
+.opcion {
+	/*Para que el cursor cambie de aspecto al pasar por este elemento*/
+	cursor: pointer;
+	/*Posición relativa al contenedor*/
+	position: relative;
+}
+
+.opcion i {
+	/*Damos estilo a los iconos*/
+	display: block;
+	width: 6rem;
+	text-align: center;
+	height: 6rem;
+	line-height: 6rem;
+	background-color: rgba(68, 119, 153, .5);
+	color: white;
+	font-size: 2rem;
+	transition: 600ms;
+}
+
+/*Estilo que se crea al pasar el cursor*/
+.opcion:hover i {
+	background-color: rgb(25, 63, 89);
+}
+
+.text {
+	/*Damos estilo a la información*/
+	position: absolute;
+	height: 6rem;
+	width: 20rem;
+	background-color: rgba(87, 154, 199, 1);
+	color: #fff;
+	top: 0;
+	/*Los ponemos detras de los iconos*/
+	z-index: -1;
+	/*Los ubicamos a la izquierda negativa para ocultarlos*/
+	left: -20rem;
+	line-height: 6rem;
+	text-align: center;
+	transition: 600ms;
+}
+
+/*Para que sobresalga el texto al pasar el cursor*/
+.opcion:hover .text {
+	left: 6rem;
+}
 
 #mensaje>div {
 	font-family: sans-serif;
@@ -384,6 +488,33 @@
 }
 
 /*=====  End of CONTACTO  ======*/
+
+/*======================================
+=            BOTÓN DE SUBIR            =
+======================================*/
+
+/*Fuente del apartado botón de subir: https://youtu.be/Vef9bxTilCU*/
+
+.gotop {
+	position: fixed;
+	width: 5rem;
+	height: 5rem;
+	background: rgba(68, 119, 153, 0.5);
+	bottom: 7rem;
+	right: 5rem;
+	text-decoration: none;
+	text-align: center;
+	line-height: 5rem;
+	color: white;
+	transition: 600ms;
+}
+
+.gotop:hover {
+	background: rgb(25, 63, 89);
+}
+
+/*=====  End of BOTÓN DE SUBIR  ======*/
+
 
 /*==============================
 =            FOOTER            =
