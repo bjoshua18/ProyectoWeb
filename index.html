@@ -9,7 +9,10 @@
 		<meta name="author" content="Byron Bustamante López"/>
 		<meta name="keywords" content="paisaje, paisajes, naturaleza"/>
 		<link rel="stylesheet" type="text/css" href="estilos/style.css"/>
-		<link rel="icon" href="img/logo.png">
+		<link rel="stylesheet" type="text/css" href="estilos/index.css"/>
+		<!-- Para los iconos -->
+		<link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css"/>
+		<link rel="icon" href="img/logo.png"/>
 
 	</head>
 
@@ -21,13 +24,13 @@
 		
 		<div id="cabecera">
 
-			<span id="logo"><a href="index.html"><img src="img/logo.png" alt="logo" /></a></span>
-			<span id="titulo"><h1>PAISAJES NATURALES</h1></span>
-			<span id="redes">
-				<span><a href="http://www.twitter.com" target="_blank"><img src="img/iconos/twitter.png" alt="Twitter" /></a></span>
-				<span><a href="http://www.instagram.com" target="_blank"><img src="img/iconos/instagram.png" alt="Instagram" /></a></span>
-				<span><a href="http://www.facebook.com" target="_blank"><img src="img/iconos/facebook.png" alt="Facebook" /></a></span>
-			</span>
+			<div class="logo"><a href="index.html"><img src="img/logo.png" alt="logo" /></a></div>
+			<div class="titulo">PAISAJES NATURALES</div>
+			<div class="redes">
+				<a class="btn" href="http://www.twitter.com" onclick="this.target='_blank'"><i class="fab fa-twitter-square"></i></a>
+				<a class="btn" href="http://www.instagram.com" onclick="this.target='_blank'"><i class="fab fa-instagram"></i></a>
+				<a class="btn" href="http://www.facebook.com" onclick="this.target='_blank'"><i class="fab fa-facebook-square"></i></a>
+			</div>
 
 		</div>
 		
@@ -37,13 +40,13 @@
 		=            MENU            =
 		===========================-->
 		
-		<div id="menu" class="estiloSeccion">
+		<div id="menu" class="menuFooter">
 			
-			<ul>
-				<li><a href="#contenido">Inicio</a></li>
-				<li><a href="#nosotros">Sobre Nosotros</a></li>
-				<li><a href="#galeria">Galería</a></li>
-				<li><a href="#contacto">Contáctanos</a></li>
+			<ul class="contenedor">
+				<li><a class="boton" href="#contenido">Inicio</a></li>
+				<li><a class="boton" href="#nosotros">Sobre Nosotros</a></li>
+				<li><a class="boton" href="#galeria">Galería</a></li>
+				<li><a class="boton" href="#mensaje">Contáctanos</a></li>
 			</ul>
 
 		</div>
@@ -56,31 +59,146 @@
 		
 		<div id="contenido">
 			
-			<span id="posts">
-				<div><div>IMAGEN</div>POST 1 <br/> TEXTO QUE RODEA A LA IMAGEN</div>
-				<div><div>IMAGEN</div>POST 2 <br/> TEXTO QUE RODEA A LA IMAGEN</div>
-				<div><div>IMAGEN</div>POST 3 <br/> TEXTO QUE RODEA A LA IMAGEN</div>
-				<div><div>IMAGEN</div>POST 4 <br/> TEXTO QUE RODEA A LA IMAGEN</div>
-			</span>
+			<div class="posts">
+				
+				<div>
+					<h3>NICARAGUA Y SUS VOLCANES</h3>
+					<br/>
+					<img src="img/imagenes/nicaragua.jpg" alt="nicaragua" class="impar" />
+					<br/>
+					<h3>Tabla de volcanes más importantes</h3>
+					<br/>
+					<table class="tabla">
+						<tr>
+							<th>Volcán</th>
+							<th>Altura (m)</th>
+							<th>Última erupción</th>
+						</tr>
+						<tr>
+							<td>Cerro Negro</td>
+							<td>728</td>
+							<td>1999</td>
+						</tr>
+						<tr>
+							<td>Concepción</td>
+							<td>1.610</td>
+							<td>2007</td>
+						</tr>
+						<tr>
+							<td>Masaya</td>
+							<td>635</td>
+							<td>2003</td>
+						</tr>
+						<tr>
+							<td>Mombacho</td>
+							<td>1.344</td>
+							<td>Holoceno</td>
+						</tr>
+						<tr>
+							<td>Momotombo</td>
+							<td>1.297</td>
+							<td>2015</td>
+						</tr>
+						<tr>
+							<td>Momotombito</td>
+							<td>390</td>
+							<td>1998</td>
+						</tr>
+						<tr>
+							<td>San Cristóbal</td>
+							<td>1.745</td>
+							<td>2012</td>
+						</tr>
+						<tr>
+							<td>Telica</td>
+							<td>1.061</td>
+							<td>2011</td>
+						</tr>
+					</table>
+					<br/>
+					<p>Nicaragua es un país volcánico y tropical, en su interior alberga también dos grandes lagos: el Xolotlán y el Cocibolca o "Gran lago de Nicaragua".</p>
+					<br/>
+					<p>Nicaragua, oficialmente República de Nicaragua, es un país de América ubicado en el istmo centroamericano. Su capital es Managua. Nicaragua está compuesta por 15 departamentos y 2 regiones autónomas. Se ubica en el hemisferio norte, entre la línea ecuatorial y el trópico de Cáncer aproximadamente entre los 11° y los 15° de latitud Norte y respecto al meridiano de Greenwich, entre los 83° y los 88° de longitud Oeste.</p>
+					<br/>
+					<p>El territorio de Nicaragua tiene una superficie aproximada de 129 494 km²,1​ limita al norte con Honduras, al sur con Costa Rica, al oeste con el océano Pacífico y al este con el mar Caribe. En cuanto a límites marítimos, en el océano Pacífico colinda con El Salvador, Honduras y Costa Rica; mientras que en el mar Caribe colinda con Honduras, Colombia y Costa Rica.</p>
+				</div>
 
-			<span id="columna">
+				<div>
+					<h3>EL MONTE CERVINO, ITALIA Y SUIZA</h3>
+					<br/>
+					<img src="img/imagenes/cervino.jpg" alt="cervino" class="par" />
+					<br/>
+					<p>El monte Cervino (español e italiano), Matterhorn (alemán), Mont Cervin o Le Cervin (francés) o Hore o Horu (walser) es posiblemente la montaña más famosa de los Alpes por su espectacular forma de pirámide, muchas veces reproducida. Su cumbre, de 4478 metros, es la quinta cima más alta de los Alpes.1​ Está localizada en la frontera entre Suiza e Italia. Queda encima de la ciudad de Zermatt, en el cantón del Valais, al noreste, y Breuil-Cervinia, en el Valle de Aosta, al sur.</p>
+					<br/>
+					<p>El nombre alemán de la montaña, Matterhorn, deriva de las palabras Matte, que significa "prado", y Horn, que significa "cuerno". La migración del nombre "prado" de la parte inferior del país al pico es común en los Alpes. Los nombres italiano y francés (Cervino y Cervin) vienen de Mons Silvius (o Mons Sylvius)2​ de la palabra latina silva, que significa bosque (de nuevo, con la migración del nombre de la parte inferior al pico). El cambio de la primera letra "s" a "c" se atribuye a Horace Bénédict de Saussure,3​ quien pensó que la palabra se refería a un ciervo (francés: cerf e italiano: cervo).4​</p>
+					<br/>
+					<h3>Alpinismo e importancia de la montaña</h3>
+					<br/>
+					<p>Desde el siglo XVIII los Alpes han atraído y fascinado a generaciones de exploradores y escaladores. El Cervino permaneció relativamente desconocido hasta 1865, pero el ascenso exitoso seguido por el trágico accidente de la expedición guiada por Edward Whymper causaron una fiebre sobre las montañas que rodean Zermatt.</p>
+					<br/>
+					<p>La construcción del ferrocarril que unía el pueblo de Zermatt con la ciudad de Visp empezó en 1888. El primer tren alcanzó Zermatt el 18 de julio de 1891 y toda la línea se electrificó en 1930.17​ Desde 1930, el pueblo está directamente conectado con St. Moritz por el tren panorámico Glacier Express. Sin embargo, no hay conexión con el pueblo de Breuil-Cervinia en el lado italiano. Los viajeros tienen que contratar guías de montaña para cruzar el glaciar paso Theodul de 3300 metros, que separa las dos localidades. La ciudad de Zermatt permanece completamente libre de coches y puede alcanzarse sólo por tren.</p>
+				</div>
 
-				<span id="login">
+				<div>
+					<h3>COSTA RICA</h3>
+					<br/>
+					<img src="img/imagenes/costarica.jpg" alt="costa rica" class="impar" />
+					<br/>
+					<p>Costa Rica, denominada oficialmente República de Costa Rica, es una nación soberana, organizada como una república presidencialista unitaria compuesta por 7 provincias. Ubicada en América Central, posee un territorio con un área total de 51 100 km². Limita con Nicaragua al norte, el mar Caribe al este, Panamá al sureste y el océano Pacífico al oeste. En cuanto a los límites marítimos, colinda con Panamá, Nicaragua, Colombia y Ecuador (a través de la Isla del Coco).7​8​ Cuenta con 5 003 393 habitantes según la última proyección demográfica del INEC.9​ Su capital, centro político y económico es San José, y su idioma oficial es el español.10​</p>
+					<br/><br/>
+					<p>Es una de las democracias más sólidas del planeta.11​12​13​ Ganó reconocimiento mundial por abolir el ejército el 1 de diciembre de 1948, abolición que fue perpetuada en la Constitución Política de 1949.14​ Su índice de desarrollo humano de 2018 se considera alto, ya que es el 63 º del mundo y el 4 º en Latinoamérica, mientras que ajustado a la desigualdad obtiene también el cuarto puesto regional, con un Coeficiente de Gini de 48,2.15​ Además, en la clasificación del Índice de Competitividad Global de 2018, es el 55 º a nivel mundial y el 6 º en el continente.16​ Costa Rica se perfila como uno de los países más ricos, progresistas, desarrollados y estables de América, destacándose en los índices ambientales,17​ de libertad de prensa,18​ libertad personal,19​ seguridad,20​21​ igualdad,22​ democracia,23​ distribución de la riqueza, progreso social,24​ salud y educación.</p>
+					<br/>
+					<h3>Energía y producción eléctrica</h3>
+					<br/>
+					<p>En Costa Rica se explotan cinco fuentes de energía, en orden de importancia: hídrica, térmica, geotérmica, eólica y solar. En América Latina, Costa Rica destaca como líder en la producción de energía renovable, debido principalmente a la producción de energía hidroeléctrica, según el informe Líderes en energía limpia de la organización World Wildlife Fund (WWF).</p>
+				</div>
+
+				<div>
+					<h3>ENERGÍAS RENOVABLES</h3>
+					<br/>
+					<img src="img/imagenes/renovable.jpg" alt="renovable" class="par"/>
+					<br/>
+					 <p>Muchos son los países que persiguen el sueño de tener una matriz energética renovable. Algunos han sabido aprovechar de forma sustentables sus recursos y ya lo están logrando.</p>
+					 <br/>
+					 <p>Según un informe del Fondo Mundial por la Naturaleza (WWF en inglés), Costa Rica, Uruguay, Brasil, Chile y México lideran en la región los esfuerzos por cambiar de paradigma y optar por energías renovables en lugar de energías fósiles como el petróleo y el carbón.</p>
+					 <br/>
+					<h3>Top 5 países con mayor impulso a las energías renovables</h3>
+					 <br/>
+					 <ol>
+					 	<li>Costa Rica</li>
+					 	<li>Uruguay</li>
+					 	<li>Islandia y Lesoto</li>
+					 	<li>México</li>
+					 	<li>Brasil</li>
+					 </ol>
+				</div>
+
+			</div>
+
+			<div class="columna">
+				
+				<form class="login" action="#" method="post">
 					<h3>LOGIN</h3>
-					<div>FORMULARIO DE LOGIN</div>
-				</span>
+					
+					<div> <!-- Para que el validador no dé error -->
+					<input type="text" name="user" />
+					<input type="password" name="password" />
+					<input type="submit" name="submit" value="Login" />
+					<a href="registro.html">¡Regístrate!</a>
+					</div>
+				</form>
 
-				<span id="recientes">
+				<div class="recientes">
 					<h3>POSTS RECIENTES</h3>
 					<ul>
-						<li>POST 4</li>
-						<li>POST 3</li>
-						<li>POST 2</li>
-						<li>POST 1</li>
+						<li>ENERGÍAS RENOVABLES</li>
+						<li>COSTA RICA</li>
+						<li>EL MONTE CERVINO, ITALIA Y SUIZA</li>
+						<li>NICARAGUA Y SUS VOLCANES</li>
 					</ul>
-				</span>
+				</div>
 
-			</span>
+			</div>
 
 		</div>
 		
@@ -90,7 +208,50 @@
 		=            NOSOTROS            =
 		===============================-->
 		
-		<div id="nosotros">SOBRE NOSOTROS</div>
+		<div id="nosotros" class="seccion">
+			<div>
+
+				<h2>SOBRE NOSOTROS</h2>
+
+				<div class="pers">
+
+					<div class="pe">
+						<img src="img/equipo/p1.jpg" alt="p1"/>
+						<div class="p-name">Natalie</div>
+						<div class="p-des">Fotógrafa</div>
+						<div class="p-sm">
+							<a href="http://www.twitter.com"  onclick="this.target='_blank'"><i class="fab fa-twitter"></i></a>
+							<a href="http://www.instagram.com"  onclick="this.target='_blank'"><i class="fab fa-instagram"></i></a>
+							<a href="http://www.facebook.com"  onclick="this.target='_blank'"><i class="fab fa-facebook-f"></i></a>
+						</div>
+					</div>
+
+					<div class="pe">
+						<img src="img/equipo/p2.jpg" alt="p2"/>
+						<div class="p-name">Alejandro</div>
+						<div class="p-des">Administrador</div>
+						<div class="p-sm">
+							<a href="http://www.twitter.com"  onclick="this.target='_blank'"><i class="fab fa-twitter"></i></a>
+							<a href="http://www.instagram.com"  onclick="this.target='_blank'"><i class="fab fa-instagram"></i></a>
+							<a href="http://www.facebook.com"  onclick="this.target='_blank'"><i class="fab fa-facebook-f"></i></a>
+						</div>
+					</div>
+
+					<div class="pe">
+						<img src="img/equipo/p3.jpg" alt="p3"/>
+						<div class="p-name">Nathan</div>
+						<div class="p-des">Diseñador</div>
+						<div class="p-sm">
+							<a href="http://www.twitter.com"  onclick="this.target='_blank'"><i class="fab fa-twitter"></i></a>
+							<a href="http://www.instagram.com"  onclick="this.target='_blank'"><i class="fab fa-instagram"></i></a>
+							<a href="http://www.facebook.com"  onclick="this.target='_blank'"><i class="fab fa-facebook-f"></i></a>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+		</div>
 		
 		<!--====  End of NOSOTROS  ====-->
 		
@@ -98,40 +259,88 @@
 		=            GALERÍA            =
 		===============================-->
 		
-		<div id="galeria">GALERÍA</div>
+		<div id="galeria" class="seccion">
+			<div>
+				<h2>SLIDER DE IMÁGENES</h2>
+				<div class="slider"></div>
+			</div>
+		</div>
 		
 		<!--====  End of GALERÍA  ====-->
 
 		<!--==============================
 		=            CONTACTO            =
 		===============================-->
-		
-		<div id="contacto">
+
+		<!-- Información de contacto fijo -->
+		<div id="contact-info">
+			<div class="opcion">
+				<!-- Dirección -->
+				<i class="fas fa-map-marked-alt"></i>
+				<div class="text">Av. José Sánchez Peñate</div>
+			</div>
+
+			<div class="opcion">
+				<!-- Email -->
+				<i class="fas fa-at"></i>
+				<div class="text">email@elrincon.com</div>
+			</div>
+
+			<div class="opcion">
+				<!-- telefono -->
+				<i class="fas fa-phone"></i>
+				<div class="text">928 227 283</div>
+			</div>
 			
-			<span id="contactanos">
-				Contáctanos<br/>
-				<br/>
-				dirección<br/>
-				telefono<br/>
-				email<br/>
-			</span>
-
-			<span id="mensaje">
-				Envíanos tu mensaje<br/>
-				<br/>
-				formulario
-			</span>
-
 		</div>
+
+		<div id="mensaje" class="seccion">
+			<div>
+				
+				<form action="#" method="post">
+					<h2>Envíanos tus sugerencias</h2>
+					
+					<div> <!-- Para que el validador no dé error -->
+						<div>
+							<label for="name">Nombre:</label>
+							<input type="text" name="name" id="name" />
+						</div>
+
+						<div>
+							<label for="email">E-mail:</label>
+							<input type="text" name="email" id="email" />
+						</div>
+
+						<textarea id="sugerencia" name="sugerencia" cols="50" rows="5">Escribe tu mensaje...</textarea>
+						
+						<input type="submit" name="submit" value="Enviar" />
+					</div>
+				</form>
+				
+
+			</div>
+		</div>
+
+
 		
 		<!--====  End of CONTACTO  ====-->
+
+		<!--====================================
+		=            BOTÓN DE SUBIR            =
+		=====================================-->
+		
+		<div><a class="gotop" href="#"><i class="fas fa-arrow-up"></i></a></div>
+		
+		<!--====  End of BOTÓN DE SUBIR  ====-->
+		
 		
 		<!--============================
 		=            FOOTER            =
 		=============================-->
 		
-		<div id="footer" class="estiloSeccion">
-			FOOTER
+		<div id="footer" class="menuFooter">
+			© Todos los derechos reservados. <br/>
+			Creado por Byron como proyecto de clase LND.
 		</div>
 		
 		<!--====  End of FOOTER  ====-->
